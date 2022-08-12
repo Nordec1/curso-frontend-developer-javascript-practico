@@ -211,9 +211,11 @@ aside {
     box-sizing: border-box;
     position: absolute;
     right: 0;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
     box-shadow: 5px 5px 10px var(--very-light-pink);
+    z-index: 3;
 }
+
 
 /* Shopping cart */
 #shoppingCartContainer {
@@ -390,6 +392,7 @@ aside {
     height: 240px;
     border-radius: 20px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .product-card .product-info {
