@@ -14,9 +14,6 @@ body {
     font-family: 'Quicksand', sans-serif;
     overflow: hidden;
 }
-.inactive{
-    opacity: 0;
-}
 .oculto-left{
     left: -200px;
     transform: translateX(-200px);
@@ -33,6 +30,16 @@ body {
 }
 .active-right{
     transform: translateX(-560px);
+    transition: transform 300ms ease-in;
+}
+.oculto-top{
+    opacity: 0;
+    transform: translateY(-142px);
+    transition: transform 300ms ease-in;
+}
+.active-top{
+    opacity: 1;
+    transform: translateY(60px);
     transition: transform 300ms ease-in;
 }
 
@@ -125,7 +132,6 @@ nav {
 /* Menu en desktop */
 .desktop-menu {
     position: absolute;
-    top: 60px;
     right: 58px;
     background-color: var(--white);
     width: 100px;

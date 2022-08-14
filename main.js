@@ -18,7 +18,7 @@ closeShoppingCartIcon.addEventListener('click', closeShoppingCart);
 
 
 function toggleDesktopMenu() {
-    desktopMenu.classList.toggle('inactive');
+    desktopMenu.classList.toggle('active-top');
     menuMobile.classList.remove('active');
     closeShoppingCart();
     closeProductDetailAside();
@@ -26,7 +26,7 @@ function toggleDesktopMenu() {
 
 function toggleMenuMobile() {
     menuMobile.classList.toggle('active');
-    desktopMenu.classList.add('inactive');
+    desktopMenu.classList.remove('active-top');
     closeShoppingCart();
     closeProductDetailAside();
 };
@@ -34,14 +34,14 @@ function toggleMenuMobile() {
 function toggleShoppingCart() {
     shoppingCartContainer.classList.toggle('active-right');    
     menuMobile.classList.remove('active');
-    desktopMenu.classList.add('inactive');
+    desktopMenu.classList.remove('active-top');
    closeProductDetailAside();
 };
 
 function openProductDetailAside() {
     productDetailContainer.classList.add('active-right');
     menuMobile.classList.remove('active');
-    desktopMenu.classList.add('inactive');
+    desktopMenu.classList.remove('active-top');
     closeShoppingCart();
 };
 
