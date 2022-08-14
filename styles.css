@@ -12,11 +12,12 @@
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
 }
 .inactive{
     opacity: 0;
 }
-.oculto{
+.oculto-left{
     left: -200px;
     transform: translateX(-200px);
     transition: transform 300ms ease-in;
@@ -25,6 +26,14 @@ body {
     transform: translateX(200px);
     transition: transform 300ms ease-out;
     width: calc(100% - 24px);
+}
+.oculto-right{
+    right: -560px;
+    transition: transform 300ms ease-in;
+}
+.active-right{
+    transform: translateX(-560px);
+    transition: transform 300ms ease-in;
 }
 
 
@@ -93,6 +102,7 @@ nav {
 
 .navbar-shopping-cart {
     position: relative;
+    cursor: pointer;
 }
 
 .navbar-shopping-cart div {
@@ -229,6 +239,7 @@ aside {
 .title-container img {
     transform: rotate(180deg);
     margin-right: 14px;
+    cursor: pointer;
 }
 
 .title {
@@ -453,6 +464,14 @@ aside {
     .product-card img {
         width: 140px;
         height: 140px;
+    }
+    
+    .oculto-right{
+        right: -740px;
+    }
+
+    .active-right{
+        transform: translateX(-740px);
     }
 }
 
